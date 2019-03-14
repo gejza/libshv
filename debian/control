@@ -1,0 +1,33 @@
+Source: libshv
+Priority: optional
+Maintainer: Elektroline Debian Packages <debian@elektroline.cz>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/silicon-heaven/libshv
+Vcs-Git: https://github.com/silicon-heaven/libshv.git
+
+Package: libshv1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: silicon heaven libraries - runtime
+ This package contains the runtime library files needed to run software
+ using libshv.
+
+Package: libshv-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libshv1 (= ${binary:Version}), ${misc:Depends}
+Description: silicon heaven libraries - development
+ This package contains the header and development files needed to build
+ programs and packages using libshv.
+
+Package: libshv-tools
+Section: libdevel
+Architecture: any
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, libshv1 (= ${binary:Version})
+Description: silicon heaven - tools
+ This package contains utils for chainpack

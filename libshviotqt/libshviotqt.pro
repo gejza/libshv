@@ -39,3 +39,7 @@ LIBS += \
     -lshvcoreqt \
 
 include($$PWD/src/src.pri)
+
+#install
+target.path=$$[INSTALL_ROOT]/opt/shv/lib/$$MULTIARCH
+INSTALLS += target

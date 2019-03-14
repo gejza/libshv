@@ -28,3 +28,7 @@ HEADERS += \
 	$$CCPCP_SRC_DIR/cchainpack.h \
 	$$CCPCP_SRC_DIR/ccpcp_convert.h \
 
+#install
+target.path=$$[INSTALL_ROOT]/opt/shv/bin
+INSTALLS += target
+

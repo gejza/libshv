@@ -32,3 +32,6 @@ SOURCES += \
 
 HEADERS += \
 
+#install
+target.path=$$[INSTALL_ROOT]/opt/shv/bin
+INSTALLS += target
